@@ -1,0 +1,23 @@
+.btn {    
+    text-transform: uppercase;
+    transition: all 1s ease-in;
+}
+
+.line {
+    content: '';
+    display: inline-block;
+    border: 1px solid red;
+    width: 50px;
+    margin-right: 0.5rem;
+}
+
+.btn:hover .line {
+    width: 100px;
+}
+
+.btn--secondary:hover + .btn--secondary::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid red;
+    width: 100px;
+}

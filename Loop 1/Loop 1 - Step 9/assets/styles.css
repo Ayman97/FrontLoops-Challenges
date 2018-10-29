@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: Roboto, Arial;
+    background: #F7CD75;
+} 
+
+/* Card */
+.card {
+    width: 800px;
+    height: 380px;
+    margin: 3rem auto;
+    display: flex;
+}
+
+/* Wallet */
+.wallet {
+    background-color: #F2F2F2;
+    height: 100%;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    padding: 2rem;
+    overflow-y: hidden;
+}
+
+.wallet__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wallet__title {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.wallet__stream {
+    margin-top: 2rem;
+}
+
+.wallet__item {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #DEDEDE;
+    padding: 0.5rem;
+    color: #727372;
+}
+
+.wallet__item ~ .wallet__item { margin-top: 1.5rem}
+
+.wallet__item:hover {
+    border: 2px solid #8793C6;
+    cursor: pointer;
+}
+
+.wallet__item--active {border: 2px solid #8793C6}
+
+.wallet__img {
+    height: 35px;
+    margin-bottom: 1rem;
+}
+
+.wallet__exp-date {font-size: 0.8rem;}
+
+/* Transaction */
+.transaction {
+    background-color: #fff;
+    flex: 2;
+    padding: 2rem;
+    overflow-y: scroll;
+    border-radius: 0 5px 5px 0;
+}
+
+.transaction::-webkit-scrollbar {
+    width: 10px;
+}
+
+.transaction::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+.transaction::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.transaction__balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction__balance-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.transaction__balance-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.sup-num {
+    font-size: 65%;
+    margin-left: -5px;
+}
+
+.transaction__stream {
+    margin-top: 2rem;
+    border-top: 1px solid #DEDEDE;
+    padding-top: 2rem;
+}
+
+.transaction__item {
+    display: flex;
+}
+
+.transaction__item ~ .transaction__item {margin-top: 2rem;}
+
+.transaction__action {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #DFDFDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.transaction__action-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.transaction__name {font-size: 1rem;}
+.transaction__meta {
+    font-size: 0.8rem;
+    color: #B5B5B5;
+    margin-top: 0.2rem;
+}
+
+.transaction__price {
+    margin-left: auto;
+    color: #8898C7;
+    font-weight: 700;
+}
+
+.transaction__price--received {color: #8DCF61}

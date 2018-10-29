@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    background: url(img/background.jpg) no-repeat center / 100%;
+}
+
+/**
+    Card 
+**/
+.card {
+    background-color: #fff;
+    width: 380px;
+    padding: 2.5rem;
+    margin: 3rem auto;
+    border-radius: 5px;
+}
+
+.card__flights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 2.5rem;
+}
+
+.card__flight-abbr {
+    font-family: Prompt;
+    font-size: 3rem;
+    line-height: 1;
+    color: #3B8ACF;
+}
+
+.card__flight-name {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.card__flight-name--arrival {
+    text-align: right;
+}
+
+.card__flights-divider {
+    width: 25px;
+    height: 5px;
+    background-color: #D3E6F4;
+}
+
+.card__info {
+    width: 100%;
+}
+.card__info--header tr {display: flex; justify-content: space-between}
+.card__info--header th, .card__info--header td {flex: 1}
+.card__info ~ .card__info {margin-top: 1rem}
+
+.card__info th {
+    text-align: left;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.card__info td {
+    font-size: 0.95rem;
+}
+
+.card__info--body tr:nth-of-type(even) {
+    display: inline-table;
+    width: 100%;    
+    margin-bottom: 0.5rem;
+}
+
+.card__info--body tr:last-of-type {margin-bottom: 0}
+
+.card__info-image {
+    height: 85%;
+}

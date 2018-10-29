@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 9</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="card">
+    <div class="wallet">
+      <header class="wallet__header">
+        <h2 class="wallet__title">My Wallets</h2>
+        <a href="#" class="wallet__add-icon">
+          <img src="img/plus.svg" alt="plus">
+        </a>
+      </header>
+
+      <div class="wallet__stream">
+        <div class="wallet__item">
+          <img src="img/visa.svg" alt="wallet-visa" class="wallet__img">
+          <p class="wallet__number">**** **** **** 2562</p>
+          <p class="wallet__exp-date">Valid thru 12/17</p>
+        </div>
+
+        <div class="wallet__item wallet__item--active">
+          <img src="img/mastercard.svg" alt="wallet-mastercard" class="wallet__img">
+          <p class="wallet__number">**** **** **** 2101</p>
+          <p class="wallet__exp-date">Valid thru 07/19</p>
+        </div>
+
+        <div class="wallet__item">
+          <img src="img/maestro.svg" alt="wallet-maestro" class="wallet__img">
+          <p class="wallet__number">**** **** **** 8335</p>
+          <p class="wallet__exp-date">Valid thru 09/17</p>
+        </div>
+      </div>
+      <!-- end of wallet__stream -->
+    </div>
+    <!--end of wallet -->
+
+    <div class="transaction">
+      <div class="transaction__balance">
+        <h2 class="transaction__balance-title">Current Balance</h2>
+        <p class="transaction__balance-number">$729.
+          <sup class="sup-num">00</sup>
+        </p>
+      </div>
+
+      <div class="transaction__stream">
+        <div class="transaction__item">
+          <div class="transaction__action">
+            <img src="img/minus.svg" class="transaction__action-icon">
+          </div>
+
+          <div class="transaction__info">
+            <h3 class="transaction__name">Apple iPhone 7, 128GB</h3>
+            <p class="transaction__meta">Electronics #32343424 - 12 July 2015</p>
+          </div>
+
+          <p class="transaction__price">$650.
+            <sup class="sup-num">00</sup>
+          </p>
+        </div>
+        <!--end of transaction__item -->
+
+        <div class="transaction__item">
+          <div class="transaction__action">
+            <img src="img/plus.svg" class="transaction__action-icon">
+          </div>
+
+          <div class="transaction__info">
+            <h3 class="transaction__name">Funds Added</h3>
+            <p class="transaction__meta">Payment #5435 - 11 July 2015</p>
+          </div>
+
+          <p class="transaction__price transaction__price--received">$900.
+            <sup class="sup-num">00</sup>
+          </p>
+        </div>
+        <!--end of transaction__item -->
+
+        <div class="transaction__item">
+          <div class="transaction__action">
+            <img src="img/minus.svg" class="transaction__action-icon">
+          </div>
+
+          <div class="transaction__info">
+            <h3 class="transaction__name">Energy Bill</h3>
+            <p class="transaction__meta">Other #745237423 - 11 July 2015</p>
+          </div>
+
+          <p class="transaction__price">$84.
+            <sup class="sup-num">90</sup>
+          </p>
+        </div>
+        <!--end of transaction__item -->
+
+        <div class="transaction__item">
+          <div class="transaction__action">
+            <img src="img/minus.svg" class="transaction__action-icon">
+          </div>
+
+          <div class="transaction__info">
+            <h3 class="transaction__name">The Eye Cinema Ticket</h3>
+            <p class="transaction__meta">Entertainment #32343424 - 10 July 2015</p>
+          </div>
+
+          <p class="transaction__price">$40.
+            <sup class="sup-num">00</sup>
+          </p>
+        </div>
+        <!--end of transaction__item -->
+
+        <div class="transaction__item">
+          <div class="transaction__action">
+            <img src="img/minus.svg" class="transaction__action-icon">
+          </div>
+
+          <div class="transaction__info">
+            <h3 class="transaction__name">McFood Resturant</h3>
+            <p class="transaction__meta">Cafes #32448 - 10 July 20155</p>
+          </div>
+
+          <p class="transaction__price">$10.
+            <sup class="sup-num">50</sup>
+          </p>
+        </div>
+        <!--end of transaction__item -->
+
+        <div class="transaction__item">
+          <div class="transaction__action">
+            <img src="img/minus.svg" class="transaction__action-icon">
+          </div>
+
+          <div class="transaction__info">
+            <h3 class="transaction__name">Gas Stations</h3>
+            <p class="transaction__meta">Other #2138453 - 10 July 2015</p>
+          </div>
+
+          <p class="transaction__price">$30.
+            <sup class="sup-num">00</sup>
+          </p>
+        </div>
+        <!--end of transaction__item -->
+
+      </div>
+      <!--end of transaction stream-->
+    </div>
+
+  </div>
+</body>
+
+</html>

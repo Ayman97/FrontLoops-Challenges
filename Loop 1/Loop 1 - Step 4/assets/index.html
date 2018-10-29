@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 4</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="chat">
+    <div class="chat__header">
+      <span class="chat__active-circle"></span>
+      <h3 class="chat__recipient-name">Mark Zuckerberg</h3>
+      <img src="img/close.svg" alt="close" class="chat__close-icon">
+    </div>
+
+    <div class="chat__body">
+      <h3 class="chat__day-divider">Today</h3>
+
+      <div class="chat__message">
+        <time class="chat__message-time chat__message-time--sender">10:53</time>
+        <p class="chat__message-text chat__message-text--sender">Hi, Mark! I made a new design for
+          <br>Messenger App.</p>
+      </div>
+
+      <div class="chat__message">
+        <time class="chat__message-time chat__message-time--recipient">10:57</time>
+        <p class="chat__message-text chat__message-text--recipient">Yo! Send it to my assisstant and we'll review it during the year.</p>
+      </div>
+
+      <div class="chat__message">
+        <time class="chat__message-time chat__message-time--sender">11:03</time>
+        <p class="chat__message-text chat__message-text--sender default-width">But Mark...</p>
+      </div>
+
+      <div class="chat__message">
+        <p class="chat__message-text  chat__message-text--recipient chat__message-text--blocked default-width">You were blocked by the user.</p>
+      </div>
+
+      <div class="chat__message-input">
+        <input type="text" placeholder="Enter your message" class="chat__input">
+        <button class="btn btn--primary">SEND</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

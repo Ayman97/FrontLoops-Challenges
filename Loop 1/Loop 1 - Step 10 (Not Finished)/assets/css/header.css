@@ -1,0 +1,10 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+}
+

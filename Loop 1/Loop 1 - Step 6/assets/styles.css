@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    background: #4D515D;
+}
+
+.signup {
+    display: flex;
+    width: 960px;
+    height: 550px;
+    margin: 4rem auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px 8px rgba(0, 0, 0, 0.125);
+}
+
+.signup__content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__body { 
+    padding: 4.5rem 3.25rem 0; 
+}
+
+.signup__title {
+    margin-bottom: 1rem;
+    font-size: normal;
+}
+
+.signup__desc {
+    color: #aaa;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+/* Sign up Buttons */
+.signup__button {
+    width: 100%;
+    background: none;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: gray;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 150ms ease-in;
+}
+
+.signup__button:hover {
+    border: 1px solid transparent;    
+    box-shadow: 0 3px 9px 3px #f0f0f0;
+    color: #000;
+}
+
+.signup__button--google-plus {
+    background: url(img/googleplus.svg) no-repeat 1rem;
+    background-size: 4%;
+}
+
+.signup__button--facebook {
+    background: url(img/facebook.svg) no-repeat 1rem;
+    background-size: 4%;
+}
+
+.signup__button--twitter {
+    background: url(img/twitter.svg) no-repeat 1rem;
+    background-size: 4%;
+}
+
+.signup__image {
+    flex: 2;   
+}
+
+.signup__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.signup__title {
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+
+.signup__footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e2e2e2;
+    padding: 2rem 3.25rem;
+    font-size: 0.7rem;
+    margin-top: auto;
+}
+
+.signup__link {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.signup__link:hover {color: #000}

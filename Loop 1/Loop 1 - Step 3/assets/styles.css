@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: Roboto;
+    background: #179F84;
+}
+
+.order {
+    width: 550px;
+    min-height: 425px;
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 2.5rem 4rem;
+    background: #fff url(img/bicycle.png) no-repeat center 175px / 100%;
+    box-shadow: 1px 3px 24px 4px rgba(0, 0, 0, 0.25);
+}
+
+.order__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+}
+
+.order__title {font-size: 1.3rem}
+
+.order__account-icon {
+    border: 1px solid #e2e2e2; 
+    padding: 0.4rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.order__account-icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.order__info {
+    color: #AAABB0;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.order__list {
+    width: 100%;
+}
+
+.order__list td:first-child {
+    color: #5C5C5C;
+    padding-bottom: 1.5rem;
+}
+
+.order__item {font-size: 0.9rem}
+
+.order__price {
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+.order__total {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}

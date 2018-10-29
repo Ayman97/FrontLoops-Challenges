@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: #85A5D4;
+    font-family: Roboto, sans-serif;
+}
+
+.plans {
+    background-color: #fff;   
+    display: flex; 
+    align-items: flex-start;
+    padding: 1.5rem;
+    width: 1100px;
+    margin: 1rem auto;
+}
+
+.plans, .plan {border-radius: 5px}
+
+.plan {
+    flex: 1;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+.plan:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.plan__image {
+    width: 65px;
+    margin: 0 auto 2rem;
+}
+
+.plan__title {
+    color: blue;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 125%;
+    letter-spacing: 2.5px;
+}
+
+.plan__title, .plan__price {
+    color: #5572D6;
+}
+
+.plan__info {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: gray;
+}
+
+.big {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.big::before {
+    content: '$';
+    font-size: 50%;
+    position: relative;
+    top: -10px;
+}
